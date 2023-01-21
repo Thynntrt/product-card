@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="animated">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="product-image">
+        <button id="btn-360" onclick="toggle()">
+          <img
+            src="./assets/360.svg"
+            alt="Click this button to animate the couch"
+          />
+        </button>
+        <button id="btn-close" onclick="toggle()">
+          <img src="./assets/close.svg" alt="stop couch animation" />
+        </button>
+
+        <img id="static" src="./assets/couch.jpg" alt="couch" />
+        <img id="animated" src="./assets/couch.gif" alt="animated couch" />
+      </div>
+
+      <div id="product-details">
+        <h4>CODE: 42404</h4>
+        <h1>Couch Margot II </h1>
+        <p>459,99€</p>
+        <button>BUY NOW</button>
+      </div>
+    </div>
+
+    <script>
+      function toggle() {
+        document.documentElement.classList.toggle("animated")
+      }
+    </script>
+  </body>
+</html>
